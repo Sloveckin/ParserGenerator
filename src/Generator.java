@@ -293,8 +293,7 @@ public class Generator extends ParserGramBaseVisitor<String> {
                 final Set<String> hhh = getSafeFirst(rule.rules().getFirst().Terminal());
                 for (final String el : hhh) {
                     if (hlp.contains(el)) {
-                        //throw new GeneratorException("Not LL(1) grammar");
-                        throw new GeneratorException("hehe");
+                        throw new GeneratorException("Not LL(1) grammar");
                     }
                     hlp.add(el);
                 }
